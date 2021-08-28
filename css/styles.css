@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
+@import "reset.css";
+@import "variables.css";
+
+/*screens */
+@import "screens/home.css";
+
+/* components */
+@import "components/status-bar.css";
+
+* {
+  font-family: "Poor Story", cursive;
+}
+
+body {
+  background-color: var(--main-color);
+}
