@@ -1,4 +1,6 @@
 :root {
   --main-color: #fffdf8;
   --status-bar-color: #fff8e8;
+  --nav-bar-default-color: #fff3cc;
+  --nav-bar-current-color: #eee2bb;
 }

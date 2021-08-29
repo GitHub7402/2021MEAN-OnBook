@@ -1,0 +1,33 @@
+.nav-bar {
+  border-top: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: var(--nav-bar-default-color);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+.nav-bar a {
+  padding: 15px 0px;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar a i {
+  font-size: 30px;
+}
+
+.nav-bar__home i {
+  color: rgb(238, 118, 75);
+}
+
+.nav-bar__profile i {
+  color: cornflowerblue;
+}
+
+.nav-bar__shelf i {
+  color: brown;
+}
