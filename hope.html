@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>희망 북클럽 Talk</title>
   </head>
+
   <body>
     <section class="status-bar">
       <div class="status-bar__column"><i class="fas fa-wifi"></i></div>
@@ -18,12 +19,89 @@
       </div>
     </section>
 
-    <header></header>
+    <header class="screen-header">
+      <div class="screen-header__column">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div class="screen-header__column">
+        <div class="screen-header__title"><h1>희망 북클럽 Talk</h1></div>
+        <div class="screen-header__subtitle">
+          <h2>ON북 구성원들의 손으로 직접 만들어보는 북클럽</h2>
+        </div>
+      </div>
+      <div class="screen-header__column">
+        <!-- <i class="fas fa-bars"></i> -->
+      </div>
+    </header>
 
-    <main></main>
+    <main>
+      <div class="hoping-bookclub">
+        <div class="hoping-bookclub__header">
+          <img src="#" class="hoping-bookclub__img" />
+          <div class="hoping-bookclub__title">
+            <h1>건축, 인테리어 함께 읽어요</h1>
+            <p>건축, 인테리어와 관련한 책을 함께 읽으실 분 계신가요?</p>
+            <p>
+              공간의 힘, 인테리어와 관련한 취향 찾기를 클럽 활동을 통해 함께
+              하고 싶어요!
+            </p>
+          </div>
+        </div>
+        <div class="hoping-bookclub__apply">
+          <h2>클럽 개설을 희망합니다!</h2>
+          <button id="applyBtn1">희망신청<i class="fas fa-heart"></i></button>
+        </div>
+        <div class="dividing-line"></div>
+        <div class="hoping-bookclub__functions">
+          <i class="far fa-comments"></i>
+          <i class="far fa-smile"></i>
+        </div>
+      </div>
+
+      <div class="hoping-bookclub">
+        <div class="hoping-bookclub__header">
+          <img src="#" class="hoping-bookclub__img" />
+          <div class="hoping-bookclub__title">
+            <h1>시 해석, 시 쓰기 함께 읽어요</h1>
+            <p>시 해석집과 시집을 함께 읽고 감상을 나누어보아요!</p>
+          </div>
+        </div>
+        <div class="hoping-bookclub__apply">
+          <h2>클럽 개설을 희망합니다!</h2>
+          <button id="applyBtn2">희망신청<i class="fas fa-heart"></i></button>
+        </div>
+        <div class="dividing-line"></div>
+        <div class="hoping-bookclub__functions">
+          <i class="far fa-comments"></i>
+          <i class="far fa-smile"></i>
+        </div>
+      </div>
+
+      <div class="hoping-bookclub">
+        <div class="hoping-bookclub__header">
+          <img src="#" class="hoping-bookclub__img" />
+          <div class="hoping-bookclub__title">
+            <h1>영화 관련 도서 함께 읽어요</h1>
+            <p>
+              영화와 관련된 책을 함께 읽고 영화 평론과 해석에 대해 클럽에서 함께
+              공부하고 싶습니다.
+            </p>
+          </div>
+        </div>
+        <div class="hoping-bookclub__apply">
+          <h2>클럽 개설을 희망합니다!</h2>
+          <button id="applyBtn3">희망신청<i class="fas fa-heart"></i></button>
+        </div>
+        <div class="dividing-line"></div>
+        <div class="hoping-bookclub__functions">
+          <i class="far fa-comments"></i>
+          <i class="far fa-smile"></i>
+        </div>
+      </div>
+    </main>
 
     <nav class="nav-bar">
-      <a class="nav-bar__home" href="index.html">
+      <a class="nav-bar__home" href="home.html">
         <i class="fas fa-home"></i>
       </a>
       <a class="nav-bar__profile" href="profile.html"
@@ -39,5 +117,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/clock.js"></script>
+    <script src="js/screen-header.js"></script>
+    <script src="js/like-toggle.js"></script>
   </body>
 </html>
