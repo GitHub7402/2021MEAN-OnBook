@@ -36,41 +36,55 @@
       </div>
     </header>
 
-    <section class="my-menu">
-      <div class="my-menu__title">
-        <h3>My Menu</h3>
-      </div>
-      <ul class="my-menu__contents">
-        <li class="my-menu__content">
-          <i class="fas fa-grin-hearts"></i>
-          <h4>좋아요 한 글</h4>
-          <span>1</span>
-        </li>
-        <li class="my-menu__content">
-          <i class="fas fa-desktop"></i>
-          <h4>북클럽 미션</h4>
-          <span>6</span>
-        </li>
-        <li class="my-menu__content">
-          <i class="far fa-edit"></i>
-          <h4>내가 쓴 글</h4>
-          <span>30</span>
-        </li>
-        <li class="my-menu__content">
-          <i class="fas fa-bell"></i>
-          <h4>내 알림</h4>
-          <span>17</span>
-        </li>
-      </ul>
-    </section>
+    <div style="padding: 130px 0 200px 0">
+      <section class="my-menu">
+        <div class="my-menu__title">
+          <h3>My Menu</h3>
+        </div>
+        <ul class="my-menu__contents">
+          <li class="my-menu__content">
+            <i class="fas fa-grin-hearts" style="color: #ffc10e"></i>
+            <h4>좋아요 한 글</h4>
+            <span>1</span>
+          </li>
+          <li class="my-menu__content">
+            <i class="fas fa-desktop" style="color: rgba(0, 0, 0, 0.8)"></i>
+            <h4>북클럽 미션</h4>
+            <span>6</span>
+          </li>
+          <li class="my-menu__content">
+            <i class="far fa-edit" style="color: #8ac6dd"></i>
+            <h4>내가 쓴 글</h4>
+            <span>30</span>
+          </li>
+          <li class="my-menu__content">
+            <i class="fas fa-bell" style="color: #f7d360"></i>
+            <h4>내 알림</h4>
+            <span>17</span>
+          </li>
+        </ul>
+      </section>
 
-    <main class="joining-bookclub"></main>
+      <main class="joining-bookclub">
+        <h2>참여 중인 북클럽</h2>
+        <div class="joining-bookclub__imgs">
+          <a href="#"><img src="imgs/처음 만나는 현대미술.PNG" /></a>
+          <a href="#"><img src="#" /></a>
+          <a href="#"><img src="#" /></a>
+          <a href="#"><img src="#" /></a>
+          <a href="#"><img src="#" /></a>
+        </div>
+      </main>
+    </div>
 
     <nav class="nav-bar">
       <a class="nav-bar__home" href="home.html">
         <i class="fas fa-home"></i>
       </a>
-      <a class="nav-bar__profile" href="profile.html"
+      <a
+        class="nav-bar__profile"
+        href="profile.html"
+        style="background-color: var(--nav-bar-current-color)"
         ><i class="fas fa-portrait"></i>
       </a>
       <a class="nav-bar__shelf" href="shelf.html">

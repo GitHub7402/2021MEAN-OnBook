@@ -1,3 +1,4 @@
+// hope.html like toggle
 const applyBtn1 = document.querySelector("#applyBtn1");
 const applyBtn2 = document.querySelector("#applyBtn2");
 const applyBtn3 = document.querySelector("#applyBtn3");

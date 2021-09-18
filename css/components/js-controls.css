@@ -1,3 +1,7 @@
 .applyHeartColor {
   color: #ff3980;
 }
+
+.removeContent {
+  display: none;
+}

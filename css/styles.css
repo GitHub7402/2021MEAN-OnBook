@@ -5,12 +5,14 @@
 /*screens */
 @import "screens/home.css";
 @import "screens/hope.css";
+@import "screens/profile.css";
+@import "screens/missions.css";
 
 /* components */
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
-@import "components/like-toggle.css";
+@import "components/js-controls.css";
 
 * {
   font-family: "Poor Story", cursive;
