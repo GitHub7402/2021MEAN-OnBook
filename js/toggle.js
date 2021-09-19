@@ -38,7 +38,10 @@ function showModal() {
 }
 
 function clickApplyBtn1(event) {
-    if (localStorage.getItem(A1) === NOT_APPLIED) {
+  if (localStorage.getItem(A1) === null)  {
+      localStorage.setItem(A1, APPLIED);
+      showModal();
+    } else if (localStorage.getItem(A1) === NOT_APPLIED) {
         localStorage.setItem(A1, APPLIED);
         showModal();
     } else if (localStorage.getItem(A1) === APPLIED) {
@@ -48,7 +51,10 @@ function clickApplyBtn1(event) {
 }
 
 function clickApplyBtn2(event) {
-    if (localStorage.getItem(A2) === NOT_APPLIED) {
+  if (localStorage.getItem(A2) === null)  {
+      localStorage.setItem(A2, APPLIED);
+      showModal();
+    } else if (localStorage.getItem(A2) === NOT_APPLIED) {
         localStorage.setItem(A2, APPLIED);
         showModal();
     } else if (localStorage.getItem(A2) === APPLIED) {
@@ -58,7 +64,10 @@ function clickApplyBtn2(event) {
 }
 
 function clickApplyBtn3(event) {
-    if (localStorage.getItem(A3) === NOT_APPLIED) {
+  if (localStorage.getItem(A3) === null)  {
+      localStorage.setItem(A3, APPLIED);
+      showModal();
+    } else if (localStorage.getItem(A3) === NOT_APPLIED) {
         localStorage.setItem(A3, APPLIED);
         showModal();
     } else if (localStorage.getItem(A3) === APPLIED) {
