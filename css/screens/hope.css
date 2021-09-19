@@ -82,3 +82,54 @@
   margin-right: 15px;
   cursor: pointer;
 }
+
+.apply-modal {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 25px;
+}
+
+.apply-modal__content {
+  position: relative;
+  bottom: 60px;
+}
+
+.apply-modal__title {
+  background-color: #ffcdd2;
+  font-family: "Poor Story", cursive;
+  border-radius: 20px;
+  padding: 20px 25px;
+}
+
+.apply-modal__title h1 {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #bd7e85;
+}
+
+.apply-modal__title h2 {
+  font-size: 15px;
+  font-weight: lighter;
+  color: #d89098;
+}
+
+.apply-modal__content svg {
+  width: 60px;
+  position: absolute;
+}
+
+.apply-modal__content svg:first-child {
+  bottom: 30px;
+  left: -20px;
+}
+
+.apply-modal__content svg:last-child {
+  right: -30px;
+  top: 40px;
+}

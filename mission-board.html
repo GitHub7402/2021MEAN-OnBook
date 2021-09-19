@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>미션</title>
+    <title>미션 게시판</title>
   </head>
 
   <body>
@@ -19,32 +19,42 @@
       </div>
     </section>
 
-    <main class="missions__screen">
-      <div class="missions__background-img">
-        <img src="imgs/background-img.PNG" />
+    <header class="screen-header">
+      <div class="screen-header__column">
+        <i class="fas fa-chevron-left"></i>
       </div>
+      <div class="screen-header__column">
+        <div class="screen-header__title"><h1>미션 게시판</h1></div>
+        <!--
+        <div class="screen-header__subtitle">
+          <h2></h2>
+        </div>
+        -->
+      </div>
+      <div class="screen-header__column">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
 
-      <div class="missions__title missions__title--book1">
-        <a href="#">처음 만나는 현대미술</a>
-      </div>
-      <ul class="missions__links missions__links--book1 removeContent">
-        <li class="missions__link"><a href="#">미션1</a></li>
-        <li class="missions__link"><a href="#">미션2</a></li>
-        <li class="missions__link"><a href="#">미션3</a></li>
-        <li class="missions__link"><a href="#">미션4</a></li>
-        <li class="missions__link"><a href="#">미션5</a></li>
-        <li class="missions__link"><a href="#">미션6</a></li>
+    <main class="mission-board__main">
+      <ul class="mission-board__missions">
+        <li class="mission-board__mission">1</li>
+        <li class="mission-board__mission">2</li>
+        <li class="mission-board__mission">3</li>
+        <li class="mission-board__mission">4</li>
+        <li class="mission-board__mission">5</li>
+        <li class="mission-board__mission">6</li>
       </ul>
-      <div class="missions__title">
-        <a href="mission-board.html">미션 게시판</a>
-      </div>
     </main>
 
     <nav class="nav-bar">
       <a class="nav-bar__home" href="home.html">
         <i class="fas fa-home"></i>
       </a>
-      <a class="nav-bar__profile" href="profile.html"
+      <a
+        class="nav-bar__profile"
+        href="profile.html"
+        style="background-color: var(--nav-bar-current-color)"
         ><i class="fas fa-portrait"></i>
       </a>
       <a class="nav-bar__shelf" href="shelf.html">
@@ -57,6 +67,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/clock.js"></script>
-    <script src="js/toggle.js"></script>
+    <script src="js/screen-header.js"></script>
   </body>
 </html>
