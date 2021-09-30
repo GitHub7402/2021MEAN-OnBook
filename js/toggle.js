@@ -10,13 +10,13 @@ const A1 = "application1";
 const A2 = "application2";
 const A3 = "application3";
 
-if (localStorage.getItem(A1) === APPLIED) {
+if (localStorage.getItem(A1) === APPLIED && applyBtn1) {
     applyBtn1.children[0].classList.add("applyHeartColor");
-}
-if (localStorage.getItem(A2) === APPLIED) {
+} else {}
+if (localStorage.getItem(A2) === APPLIED && applyBtn2) {
     applyBtn2.children[0].classList.add("applyHeartColor");
 }
-if (localStorage.getItem(A3) === APPLIED) {
+if (localStorage.getItem(A3) === APPLIED && applyBtn3) {
     applyBtn3.children[0].classList.add("applyHeartColor");
 }
 
