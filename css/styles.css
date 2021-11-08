@@ -7,6 +7,8 @@
 @import "screens/hope.css";
 @import "screens/profile.css";
 @import "screens/missions.css";
+@import "screens/book/book-main.css";
+@import "screens/book/book-intro.css";
 
 /* components */
 @import "components/status-bar.css";
