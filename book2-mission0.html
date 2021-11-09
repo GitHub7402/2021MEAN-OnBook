@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>나의 북클럽</title>
+    <title>퀴즈 - 영화 -----</title>
   </head>
 
   <body>
@@ -36,54 +36,37 @@
       </div>
     </header>
 
-    <div style="padding: 130px 0 200px 0">
-      <section class="my-menu">
-        <div class="my-menu__title">
-          <h3>My Menu</h3>
-        </div>
-        <ul class="my-menu__contents">
-          <li class="my-menu__content">
-            <i class="fas fa-grin-hearts" style="color: #ffc10e"></i>
-            <h4>좋아요 한 글</h4>
-            <span>1</span>
-          </li>
-          <li class="my-menu__content">
-            <i class="fas fa-desktop" style="color: rgba(0, 0, 0, 0.8)"></i>
-            <h4>북클럽 미션</h4>
-            <span>6</span>
-          </li>
-          <li class="my-menu__content">
-            <i class="far fa-edit" style="color: #8ac6dd"></i>
-            <h4>내가 쓴 글</h4>
-            <span>30</span>
-          </li>
-          <li class="my-menu__content">
-            <i class="fas fa-bell" style="color: #f7d360"></i>
-            <h4>내 알림</h4>
-            <span>17</span>
-          </li>
-        </ul>
-      </section>
-
-      <main class="joining-bookclub">
-        <h2>참여 중인 북클럽</h2>
-        <div class="joining-bookclub__imgs">
-          <a href="book1-main.html"
-            ><img src="imgs/처음 만나는 현대미술.PNG"
-          /></a>
-          <a href="book2-main.html"><img src="imgs/book2/book2.jpg" /></a>
-        </div>
+    <main class="mission-form__main">
+      <header id="title" class="mission-form__title">
+        <h3>처음 만나는 현대미술 들어가기</h3>
+      </header>
+      <main class="mission-form__img">
+        <img
+          id="m2-0-0"
+          src="imgs/book2/book2-quiz1-0.jpg"
+          style="cursor: pointer"
+        />
+        <img
+          id="m2-0-1"
+          src="imgs/book2/book2-quiz1-1.jpg"
+          class="removeContent"
+        />
       </main>
-    </div>
+      <nav class="mission-form__btns">
+        <a class="mission-form__btn" href="mission-board.html"
+          >미션 게시판 바로가기</a
+        >
+        <a class="mission-form__btn" href="book1-mission1.html"
+          >미션#1 바로가기</a
+        >
+      </nav>
+    </main>
 
     <nav class="nav-bar">
       <a class="nav-bar__home" href="home.html">
         <i class="fas fa-home"></i>
       </a>
-      <a
-        class="nav-bar__profile"
-        href="profile.html"
-        style="background-color: var(--nav-bar-current-color)"
+      <a class="nav-bar__profile" href="profile.html"
         ><i class="fas fa-portrait"></i>
       </a>
       <a class="nav-bar__shelf" href="shelf.html">
@@ -97,5 +80,6 @@
     ></script>
     <script src="js/clock.js"></script>
     <script src="js/screen-header.js"></script>
+    <script src="js/mission.js"></script>
   </body>
 </html>

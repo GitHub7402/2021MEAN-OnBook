@@ -74,3 +74,5 @@ if (img6_0_2) {
 if (img6_0_3) {
     img6_0_3.addEventListener("click", checkImg6);
 }
+
+// Book2 Mission0 (Quiz)

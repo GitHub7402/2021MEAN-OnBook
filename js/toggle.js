@@ -90,11 +90,19 @@ if (applyBtn3) {
 const missionsTitle_book1 = document.querySelector(".missions__title--book1");
 const missionsLinks_book1 = document.querySelector(".missions__links--book1");
 
+const missionsTitle_book2 = document.querySelector(".missions__title--book2");
+const missionsLinks_book2 = document.querySelector(".missions__links--book2");
+
 function missionToggle_book1() {
     missionsLinks_book1.classList.toggle("removeContent");
-
+}
+function missionToggle_book2() {
+    missionsLinks_book2.classList.toggle("removeContent");
 }
 
 if (missionsTitle_book1) {
     missionsTitle_book1.addEventListener("click", missionToggle_book1);
+}
+if (missionsTitle_book2) {
+    missionsTitle_book2.addEventListener("click", missionToggle_book2);
 }
