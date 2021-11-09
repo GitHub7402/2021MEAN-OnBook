@@ -1,0 +1,46 @@
+.mission-form__main {
+  padding: 130px 10px 100px 10px;
+}
+
+.mission-form__title h3 {
+  font-size: 20px;
+}
+
+.mission-form__img {
+  padding: 10px;
+  width: auto;
+  margin-top: 20px;
+}
+
+.mission-form__img img {
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.mission-form__btns {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mission-form__btn {
+  width: 215px;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  font-size: 23px;
+  font-weight: bold;
+  color: #c48b9f;
+  display: flex;
+  justify-content: center;
+}
+
+.mission-form__btn:last-child {
+  background-color: #e4c9cf;
+}
+
+.mission-form__btn:first-child {
+  background-color: #ffeeff;
+  margin-bottom: 15px;
+}

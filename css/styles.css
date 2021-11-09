@@ -15,6 +15,7 @@
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
 @import "components/js-controls.css";
+@import "components/mission-form.css";
 
 * {
   font-family: "Poor Story", cursive;
