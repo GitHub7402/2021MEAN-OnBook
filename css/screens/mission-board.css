@@ -1,0 +1,35 @@
+.mission-board__main {
+  padding-top: 130px;
+  margin: 0px 20px;
+}
+
+.mission-board__title {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.mission-board__title--text {
+  font-weight: bold;
+}
+
+.mission-board__missions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mission-board__mission {
+  background-color: cornflowerblue;
+  width: 200px;
+  height: 200px;
+}
+
+.division {
+  width: 100%;
+  height: 1px;
+  margin: 20px 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}

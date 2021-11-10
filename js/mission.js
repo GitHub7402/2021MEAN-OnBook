@@ -76,3 +76,21 @@ if (img6_0_3) {
 }
 
 // Book2 Mission0 (Quiz)
+const img2_0_0 = document.querySelector("#m2-0-0");
+const img2_0_1 = document.querySelector("#m2-0-1");
+
+function checkImg2_0(event) {
+    const imgId = event.target.id;
+    changeImg2_0(imgId);
+}
+
+function changeImg2_0(imgId) {
+    if (imgId === "m2-0-0") {
+        img2_0_0.classList.add(REMOVE_CONTENT);
+        img2_0_1.classList.remove(REMOVE_CONTENT);
+    }
+}
+
+if (img2_0_0) {
+    img2_0_0.addEventListener("click", checkImg2_0);
+}

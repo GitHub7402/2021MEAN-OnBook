@@ -9,6 +9,7 @@
 @import "screens/missions.css";
 @import "screens/book/book-main.css";
 @import "screens/book/book-intro.css";
+@import "screens/mission-board.css";
 
 /* components */
 @import "components/status-bar.css";
