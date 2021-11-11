@@ -37,15 +37,15 @@
     </header>
 
     <main class="mission-board__main">
-      <div class="mission-board__title">
+      <div id="missionBoardToggleBtn1" class="mission-board__title">
         <h1 class="mission-board__title--text">처음 만나는 현대미술</h2>
         <span class="mission-board__title--img">
-          <span><i class="fas fa-chevron-up"></i></span>
-          <span class="removeContent"><i class="fas fa-chevron-down removeContent"></i></span>
+          <span id="missionBoardToggleUpBtn1"><i class="fas fa-chevron-up"></i></span>
+          <span id="missionBoardToggleDownBtn1" class="removeContent"><i class="fas fa-chevron-down removeContent"></i></span>
         </span>
       </div>
-      <nav class="mission-board__missions">
-        <a href="#" class="mission-board__mission"><span>#1</span><span>첫 번째 미션</span></a>
+      <nav id="missionBoardToggleContent1" class="mission-board__missions">
+        <a href="book1-mission1-board.html" class="mission-board__mission"><span>#1</span><span>첫 번째 미션</span></a>
         <a href="#" class="mission-board__mission"><span>#2</span><span>두 번째 미션</span></a>
         <a href="#" class="mission-board__mission"><span>#3</span><span>세 번째 미션</span></a>
         <a href="#" class="mission-board__mission"><span>#4</span><span>네 번째 미션</span></a>
@@ -55,14 +55,14 @@
       
       <div class="division"></div>
       
-      <div class="mission-board__title">
+      <div id="missionBoardToggleBtn2" class="mission-board__title">
         <h1 class="mission-board__title--text">한국사 영화관</h2>
           <span class="mission-board__title--img">
-            <span><i class="fas fa-chevron-up"></i></span>
-            <span class="removeContent"><i class="fas fa-chevron-down" ></i></span>
+            <span id="missionBoardToggleUpBtn2"><i class="fas fa-chevron-up"></i></span>
+            <span id="missionBoardToggleDownBtn2" class="removeContent"><i class="fas fa-chevron-down" ></i></span>
           </span>
         </div>
-        <nav class="mission-board__missions">
+        <nav id="missionBoardToggleContent2" class="mission-board__missions">
         <a href="#" class="mission-board__mission"><span>#0</span><span>퀴즈</span></a>
         <a href="#" class="mission-board__mission"><span>#1</span><span>첫 번째 미션</span></a>
         <a href="#" class="mission-board__mission"><span>#2</span><span>두 번째 미션</span></a>
@@ -91,5 +91,6 @@
     ></script>
     <script src="js/clock.js"></script>
     <script src="js/screen-header.js"></script>
+    <script src="js/mission-board.js"></script>
   </body>
 </html>

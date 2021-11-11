@@ -1,0 +1,22 @@
+.mission-board-form__creation {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+}
+
+.mission-board-form__creation button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background-color: #fae100;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.mission-board-form__creation button i {
+  font-size: 20px;
+}

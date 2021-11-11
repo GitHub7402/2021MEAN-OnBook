@@ -1,4 +1,5 @@
 .status-bar {
+  z-index: 1;
   background-color: var(--status-bar-color);
   width: 100%;
   display: flex;

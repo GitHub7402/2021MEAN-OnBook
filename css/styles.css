@@ -10,6 +10,7 @@
 @import "screens/book/book-main.css";
 @import "screens/book/book-intro.css";
 @import "screens/mission-board.css";
+@import "screens/mission-board-form.css";
 
 /* components */
 @import "components/status-bar.css";
@@ -17,6 +18,7 @@
 @import "components/screen-header.css";
 @import "components/js-controls.css";
 @import "components/mission-form.css";
+@import "components/creation-btn.css";
 
 * {
   font-family: "Poor Story", cursive;

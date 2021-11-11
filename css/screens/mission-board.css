@@ -18,8 +18,18 @@
 .mission-board__missions {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+}
+
+@media screen and (max-width: 410px) {
+  .mission-board__missions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 410px) {
+  .mission-board__missions {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .mission-board__mission {
