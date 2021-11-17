@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>미션 게시판</title>
+  </head>
+
+  <body>
+    <section class="status-bar">
+      <div class="status-bar__column"><i class="fas fa-wifi"></i></div>
+      <div class="status-bar__column"><span id="js-clock">00:00</span></div>
+      <div class="status-bar__column">
+        <i class="fas fa-signal"></i>
+        <span class="battery-percent">82%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+      </div>
+    </section>
+
+    <header class="screen-header screen-header--board">
+      <div class="screen-header__column">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div class="screen-header__column">
+        <div class="screen-header__title"><h1>미션 게시판</h1></div>
+        <!--
+        <div class="screen-header__subtitle">
+          <h2></h2>
+        </div>
+        -->
+      </div>
+      <div class="screen-header__column">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <main class="mission-board-form__main">
+      <ul class="user-posts">
+        <li class="user-post">
+          <h2 class="user-post__title">네 번째 미션</h2>
+          <div class="user-post__text">
+            <p class="user-post__paragraph">저는 세게 방문을 닫는 것으로</p>
+            <p class="user-post__paragraph">
+              아빠에게 화가 난 것을 표현한 적이 있어요.
+            </p>
+            <div class="paragraph-space"></div>
+            <p class="user-post__paragraph">
+              사실 방문을 세게 닫는다고 아빠께서는 제가 화가 났다는 것을
+              이해해주지 않으셨어요. 오히려 방문을 세게 닫았다는 것으로 더 혼이
+              났어요.
+            </p>
+            <p class="user-post__paragraph">
+              하지만 아빠께서는 제가 화가 난 것을 알고 계시지만 제가 화를
+              표현하는 방식이 잘못되었다는 것을 알려주고 싶으셨던 것 같아요.
+            </p>
+          </div>
+          <ul class="hash-tags--bottom">
+            <li class="hash-tag"><h3>#화</h3></li>
+            <li class="hash-tag"><h3>#아빠</h3></li>
+            <li class="hash-tag"><h3>#미안</h3></li>
+          </ul>
+
+          <div class="division"></div>
+          <div class="user-post__functions">
+            <i class="far fa-comment"></i>
+            <i class="far fa-heart"></i>
+          </div>
+          <div class="user-post__user user-post__user--comment">
+            <span>😘</span>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <section class="mission-board-form__creation">
+      <button><i class="fas fa-plus"></i></button>
+    </section>
+
+    <nav class="nav-bar">
+      <a class="nav-bar__home" href="home.html">
+        <i class="fas fa-home"></i>
+      </a>
+      <a class="nav-bar__profile" href="profile.html"
+        ><i class="fas fa-portrait"></i>
+      </a>
+      <a class="nav-bar__shelf" href="shelf.html">
+        <i class="fas fa-book"></i>
+      </a>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/clock.js"></script>
+    <script src="js/screen-header.js"></script>
+  </body>
+</html>
