@@ -1,3 +1,4 @@
+// Mission Preview Modal
 const missionModal = document.querySelector(".mission-preview__modal");
 const missionModalOpenBtn = document.querySelector(".mission-board-form__title button");
 
@@ -13,6 +14,24 @@ if (missionModalOpenBtn) {
 }
 if (missionModal) {
     missionModal.addEventListener("click", closeMissionModal);
+}
+
+// Mission Example Modal
+const exampleModal = document.querySelector(".mission-example__modal");
+const exampleModalOpenBtn = document.querySelector(".mission-board-form__title button:last-child");
+
+function openExampleModal() {
+    exampleModal.classList.remove("removeContent");
+}
+function closeExampleModal() {
+    exampleModal.classList.add("removeContent");
+}
+
+if (exampleModalOpenBtn) {
+    exampleModalOpenBtn.addEventListener("click", openExampleModal);
+}
+if (exampleModal) {
+    exampleModal.addEventListener("click", closeExampleModal);
 }
 
 // Quiz Modal
@@ -64,6 +83,7 @@ if (quizStartBtn) {
 const quizLeftBtn = document.querySelector("#quizLeftBtn");
 const quizRightBtn = document.querySelector("#quizRightBtn");
 const quizBackBtn = document.querySelector("#quizBackBtn");
+const quizQuestionBtn = document.querySelector("#quizQuestionBtn");
 const notImplementedQuiz = document.querySelector("#not-implemented-quiz");
 
 function goToStart() {
@@ -76,6 +96,11 @@ function clickRightBtn() {
     afterStartingQuiz.classList.add("removeContent");
     notImplementedQuiz.classList.remove("removeContent");
 }
+function goToQuestion() {
+    notImplementedQuiz.classList.add("removeContent");
+    beforeStartingQuiz.classList.add("removeContent");
+    afterStartingQuiz.classList.remove("removeContent");
+}
 
 if (quizLeftBtn) {
     quizLeftBtn.addEventListener("click", goToStart);
@@ -85,4 +110,7 @@ if (quizRightBtn) {
 }
 if (quizBackBtn) {
     quizBackBtn.addEventListener("click", goToStart);
+}
+if (quizQuestionBtn) {
+    quizQuestionBtn.addEventListener("click", goToQuestion);
 }

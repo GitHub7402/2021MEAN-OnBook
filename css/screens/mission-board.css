@@ -33,7 +33,7 @@
 }
 
 .mission-board__mission {
-  background-color: #eeeeee;
+  background-color: rgb(211, 189, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,6 +46,10 @@
 
 .mission-board__mission span:first-child {
   margin-bottom: 5px;
+}
+
+.mission-board__missions:nth-child(2) .mission-board__mission {
+  background-color: rgb(255, 167, 135);
 }
 
 .mission-board__missions:last-child .mission-board__mission {

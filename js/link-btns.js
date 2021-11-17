@@ -90,3 +90,16 @@ function goToBook3Mission3Link() {
 if (book3Mission3Post) {
     book3Mission3Post.addEventListener("click", goToBook3Mission3Link);
 }
+
+// Book3 Mission4 Board -> comment Link
+const book3Mission4Post = document.querySelector("#fromBook3Mission4-toBoard");
+
+function goToBook3Mission4Link() {
+    const a = document.createElement("a");
+    a.href = "book3-mission4-board-comment.html";
+    a.click();
+}
+
+if (book3Mission4Post) {
+    book3Mission4Post.addEventListener("click", goToBook3Mission4Link);
+}

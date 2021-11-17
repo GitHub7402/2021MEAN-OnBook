@@ -40,7 +40,8 @@
   cursor: pointer;
 }
 
-#quizBackBtn {
+#quizBackBtn,
+#quizQuestionBtn {
   background-color: #f0b608;
 }
 
@@ -132,4 +133,16 @@
 
 #wrong-modal i {
   color: #c61616;
+}
+
+#afterStartingQuiz > img {
+  width: 90%;
+  aspect-ratio: 1;
+  margin-bottom: 10px;
+}
+
+#not-implemented-quiz > img {
+  width: 90%;
+  aspect-ratio: 1;
+  margin-bottom: -30px;
 }

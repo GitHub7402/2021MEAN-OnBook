@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>미션 게시판</title>
+  </head>
+
+  <body>
+    <section class="status-bar">
+      <div class="status-bar__column"><i class="fas fa-wifi"></i></div>
+      <div class="status-bar__column"><span id="js-clock">00:00</span></div>
+      <div class="status-bar__column">
+        <i class="fas fa-signal"></i>
+        <span class="battery-percent">82%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+      </div>
+    </section>
+
+    <header class="screen-header screen-header--board">
+      <div class="screen-header__column">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div class="screen-header__column">
+        <div class="screen-header__title"><h1>미션 게시판</h1></div>
+        <!--
+        <div class="screen-header__subtitle">
+          <h2></h2>
+        </div>
+        -->
+      </div>
+      <div class="screen-header__column">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <main class="mission-board-form__main">
+      <ul class="user-posts">
+        <li id="beforeStartingQuiz" class="quiz">
+          <h1 class="quiz-title">한국사 영화관 퀴즈</h1>
+          <img class="quiz-img" src="imgs/book2/book2.jpg" />
+          <h2 class="quiz-subtitle"></h2>
+          <button id="quiz-start-btn">시작하기</button>
+        </li>
+        <li id="afterStartingQuiz" class="quiz removeContent">
+          <img src="imgs/book2/book2-quiz1-0.jpg" />
+          <div class="quiz-controller">
+            <button id="quizLeftBtn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="quizRightBtn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </li>
+        <li id="not-implemented-quiz" class="quiz removeContent">
+          <img src="imgs/book2/book2-quiz1-1.jpg" />
+          <h2 class="quiz-subtitle"></h2>
+          <button id="quizQuestionBtn">문제 보기</button>
+        </li>
+      </ul>
+    </main>
+
+    <nav class="nav-bar">
+      <a class="nav-bar__home" href="home.html">
+        <i class="fas fa-home"></i>
+      </a>
+      <a class="nav-bar__profile" href="profile.html"
+        ><i class="fas fa-portrait"></i>
+      </a>
+      <a class="nav-bar__shelf" href="shelf.html">
+        <i class="fas fa-book"></i>
+      </a>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/clock.js"></script>
+    <script src="js/screen-header.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
+</html>
