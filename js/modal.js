@@ -62,7 +62,7 @@ if (quizStartBtn) {
 
 // Quiz Controller
 const quizLeftBtn = document.querySelector("#quizLeftBtn");
-const quizRigthBtn = document.querySelector("#quizRightBtn");
+const quizRightBtn = document.querySelector("#quizRightBtn");
 const quizBackBtn = document.querySelector("#quizBackBtn");
 const notImplementedQuiz = document.querySelector("#not-implemented-quiz");
 

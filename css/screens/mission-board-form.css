@@ -104,6 +104,18 @@
   font-size: 23px;
 }
 
+.user-post__img {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.user-post__img img {
+  width: 60%;
+  aspect-ratio: 1;
+}
+
 .user-post__text {
   padding-left: 15px;
 }
@@ -111,6 +123,10 @@
 .user-post__text .user-post__paragraph {
   margin-bottom: 5px;
   padding-right: 10px;
+}
+
+.paragraph-space {
+  padding: 10px 0;
 }
 
 .user-post__functions {
@@ -139,4 +155,8 @@
 
 .user-post__user--comment {
   top: 15px;
+}
+
+.user-post__user span {
+  font-size: 30px;
 }

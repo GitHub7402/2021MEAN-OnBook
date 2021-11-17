@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>미션 게시판</title>
+  </head>
+
+  <body>
+    <section class="status-bar">
+      <div class="status-bar__column"><i class="fas fa-wifi"></i></div>
+      <div class="status-bar__column"><span id="js-clock">00:00</span></div>
+      <div class="status-bar__column">
+        <i class="fas fa-signal"></i>
+        <span class="battery-percent">82%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+      </div>
+    </section>
+
+    <header class="screen-header screen-header--board">
+      <div class="screen-header__column">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div class="screen-header__column">
+        <div class="screen-header__title"><h1>미션 게시판</h1></div>
+        <!--
+        <div class="screen-header__subtitle">
+          <h2></h2>
+        </div>
+        -->
+      </div>
+      <div class="screen-header__column">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <main class="mission-board-form__main">
+      <ul class="user-posts">
+        <li class="user-post">
+          <h2 class="user-post__title">첫 번째 미션</h2>
+          <div class="user-post__text">
+            <p class="user-post__paragraph">서울시립북서울미술관에서 진행한</p>
+            <p class="user-post__paragraph">
+              '길은 너무나 길고 종이는 조그맣기 때문에' 전시회를 갔어요.
+            </p>
+            <div class="paragraph-space"></div>
+            <p class="user-post__paragraph">
+              장애가 있는 작가들의 작품들이 전시되어 있었어요.
+            </p>
+          </div>
+          <ul class="hash-tags--bottom">
+            <li class="hash-tag"><h3>#전시회</h3></li>
+            <li class="hash-tag"><h3>#서울시립북서울미술관</h3></li>
+          </ul>
+
+          <div class="division"></div>
+          <div class="user-post__functions">
+            <i class="far fa-comment"></i>
+            <i class="far fa-heart"></i>
+          </div>
+          <div class="user-post__user user-post__user--comment">
+            <span>😊</span>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <section class="mission-board-form__creation">
+      <button><i class="fas fa-plus"></i></button>
+    </section>
+
+    <nav class="nav-bar">
+      <a class="nav-bar__home" href="home.html">
+        <i class="fas fa-home"></i>
+      </a>
+      <a class="nav-bar__profile" href="profile.html"
+        ><i class="fas fa-portrait"></i>
+      </a>
+      <a class="nav-bar__shelf" href="shelf.html">
+        <i class="fas fa-book"></i>
+      </a>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/clock.js"></script>
+    <script src="js/screen-header.js"></script>
+  </body>
+</html>

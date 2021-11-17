@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>미션 게시판</title>
+  </head>
+
+  <body>
+    <section class="status-bar">
+      <div class="status-bar__column"><i class="fas fa-wifi"></i></div>
+      <div class="status-bar__column"><span id="js-clock">00:00</span></div>
+      <div class="status-bar__column">
+        <i class="fas fa-signal"></i>
+        <span class="battery-percent">82%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+      </div>
+    </section>
+
+    <header class="screen-header screen-header--board">
+      <div class="screen-header__column">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div class="screen-header__column">
+        <div class="screen-header__title"><h1>미션 게시판</h1></div>
+        <!--
+        <div class="screen-header__subtitle">
+          <h2></h2>
+        </div>
+        -->
+      </div>
+      <div class="screen-header__column">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <main class="mission-board-form__main">
+      <ul class="user-posts">
+        <li class="user-post">
+          <h2 class="user-post__title">세 번째 미션</h2>
+          <div class="user-post__text">
+            <p class="user-post__paragraph">저는 대학교에 가기 위해</p>
+            <p class="user-post__paragraph">정말 열심히 수능을 준비했어요.</p>
+            <p class="user-post__paragraph">매일 열심히 공부했던 것 같아요.</p>
+            <p class="user-post__paragraph">
+              다시는 그때로 돌아가고 싶지 않을 정도로
+            </p>
+            <p class="user-post__paragraph">
+              제가 할 수 있는 준비는 다 하려고 노력했던 것 같아요.
+            </p>
+            <div class="paragraph-space"></div>
+            <p class="user-post__paragraph">
+              이것이 의도적으로 준비한 매우 큰 도전이었습니다.
+            </p>
+          </div>
+          <ul class="hash-tags--bottom">
+            <li class="hash-tag"><h3>#수능</h3></li>
+            <li class="hash-tag"><h3>#노력</h3></li>
+          </ul>
+
+          <div class="division"></div>
+          <div class="user-post__functions">
+            <i class="far fa-comment"></i>
+            <i class="far fa-heart"></i>
+          </div>
+          <div class="user-post__user user-post__user--comment">
+            <span>😎</span>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <section class="mission-board-form__creation">
+      <button><i class="fas fa-plus"></i></button>
+    </section>
+
+    <nav class="nav-bar">
+      <a class="nav-bar__home" href="home.html">
+        <i class="fas fa-home"></i>
+      </a>
+      <a class="nav-bar__profile" href="profile.html"
+        ><i class="fas fa-portrait"></i>
+      </a>
+      <a class="nav-bar__shelf" href="shelf.html">
+        <i class="fas fa-book"></i>
+      </a>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/clock.js"></script>
+    <script src="js/screen-header.js"></script>
+  </body>
+</html>
