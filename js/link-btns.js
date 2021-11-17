@@ -1,5 +1,5 @@
 // Book1 Main Img-Link
-const book1IntroLink = document.querySelector(".book-main img");
+const book1IntroLink = document.querySelector("#book1-main img");
 
 function goToBook1Intro() {
     const a = document.createElement("a");

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>미션 게시판</title>
+  </head>
+
+  <body>
+    <section class="status-bar">
+      <div class="status-bar__column"><i class="fas fa-wifi"></i></div>
+      <div class="status-bar__column"><span id="js-clock">00:00</span></div>
+      <div class="status-bar__column">
+        <i class="fas fa-signal"></i>
+        <span class="battery-percent">82%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+      </div>
+    </section>
+
+    <header class="screen-header screen-header--board">
+      <div class="screen-header__column">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div class="screen-header__column">
+        <div class="screen-header__title"><h1>미션 게시판</h1></div>
+        <!--
+        <div class="screen-header__subtitle">
+          <h2></h2>
+        </div>
+        -->
+      </div>
+      <div class="screen-header__column">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <main class="mission-board-form__main">
+      <div class="mission-preview__modal removeContent">
+        <button class="mission-preview__close">
+          <i class="fas fa-times"></i>
+        </button>
+        <img src="imgs/book1/book1-mission5.png" />
+      </div>
+      <header class="mission-board-form__title">
+        <h1>처음 만나는 현대미술 미션#5</h1>
+        <button>미션 보기</button>
+      </header>
+      <ul class="user-posts">
+        <li id="beforeStartingQuiz" class="quiz">
+          <h1 class="quiz-title">처음 만나는 현대미술 미션#5 퀴즈</h1>
+          <img class="quiz-img" src="imgs/처음 만나는 현대미술.PNG" />
+          <h2 class="quiz-subtitle">퀴즈는 총 7문제가 출제됩니다!</h2>
+          <button id="quiz-start-btn">시작하기</button>
+        </li>
+        <li id="afterStartingQuiz" class="quiz removeContent">
+          <h1 class="quiz-title">처음 만나는 현대미술 미션#5 퀴즈</h1>
+          <div class="quiz-question">
+            <h2>1. 다음 중 예술계에서</h2>
+            <h2>성공한 큐레이터를 이르는 말은?</h2>
+          </div>
+          <div class="quiz-buttons">
+            <button id="wrong-answer1">컬렉션 큐레이터</button>
+            <button id="correct-answer">슈퍼 큐레이터</button>
+            <button id="wrong-answer2">원 큐레이터</button>
+            <div id="correct-modal" class="quiz-modal removeContent">
+              <i class="far fa-circle"></i>
+              <h1>슈퍼 큐레이터, 정답입니다!</h1>
+            </div>
+            <div id="wrong-modal" class="quiz-modal removeContent">
+              <i class="fas fa-times"></i>
+              <h1>다시 한 번 풀어보세요!</h1>
+            </div>
+          </div>
+          <div class="quiz-controller">
+            <button id="quizLeftBtn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button id="quizRightBtn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </li>
+        <li id="not-implemented-quiz" class="quiz removeContent">
+          <h1 class="quiz-title">처음 만나는 현대미술 미션#5 퀴즈</h1>
+          <img class="quiz-img" src="imgs/처음 만나는 현대미술.PNG" />
+          <h2 class="quiz-subtitle">이후의 미션은 구현하지 않았습니다.</h2>
+          <button id="quizBackBtn">돌아가기</button>
+        </li>
+      </ul>
+    </main>
+
+    <nav class="nav-bar">
+      <a class="nav-bar__home" href="home.html">
+        <i class="fas fa-home"></i>
+      </a>
+      <a class="nav-bar__profile" href="profile.html"
+        ><i class="fas fa-portrait"></i>
+      </a>
+      <a class="nav-bar__shelf" href="shelf.html">
+        <i class="fas fa-book"></i>
+      </a>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/clock.js"></script>
+    <script src="js/screen-header.js"></script>
+    <script src="js/modal.js"></script>
+  </body>
+</html>
