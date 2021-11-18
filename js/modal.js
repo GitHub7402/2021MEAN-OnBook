@@ -84,7 +84,7 @@ const quizLeftBtn = document.querySelector("#quizLeftBtn");
 const quizRightBtn = document.querySelector("#quizRightBtn");
 const quizBackBtn = document.querySelector("#quizBackBtn");
 const quizQuestionBtn = document.querySelector("#quizQuestionBtn");
-const notImplementedQuiz = document.querySelector("#not-implemented-quiz");
+const notImplementedQuiz = document.querySelector("#finished-quiz");
 
 function goToStart() {
     afterStartingQuiz.classList.add("removeContent");
