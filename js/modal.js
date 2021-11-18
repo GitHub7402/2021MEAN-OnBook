@@ -84,20 +84,33 @@ const quizLeftBtn = document.querySelector("#quizLeftBtn");
 const quizRightBtn = document.querySelector("#quizRightBtn");
 const quizBackBtn = document.querySelector("#quizBackBtn");
 const quizQuestionBtn = document.querySelector("#quizQuestionBtn");
-const notImplementedQuiz = document.querySelector("#finished-quiz");
+const notImplementedQuiz = document.querySelector("#not-implemented-quiz");
+const finishedQuiz = document.querySelector("#finished-quiz");
 
 function goToStart() {
     afterStartingQuiz.classList.add("removeContent");
-    notImplementedQuiz.classList.add("removeContent");
+    if (notImplementedQuiz) {
+       notImplementedQuiz.classList.add("removeContent");
+    } else if (finishedQuiz) {
+        finishedQuiz.classList.add("removeContent");
+    }
     beforeStartingQuiz.classList.remove("removeContent");
 }
 function clickRightBtn() {
     beforeStartingQuiz.classList.add("removeContent");
     afterStartingQuiz.classList.add("removeContent");
-    notImplementedQuiz.classList.remove("removeContent");
+    if (notImplementedQuiz) {
+        notImplementedQuiz.classList.remove("removeContent");
+    } else if (finishedQuiz) {
+        finishedQuiz.classList.remove("removeContent");
+    }
 }
 function goToQuestion() {
-    notImplementedQuiz.classList.add("removeContent");
+    if (notImplementedQuiz) {
+        notImplementedQuiz.classList.add("removeContent");
+    } else if (finishedQuiz) {
+        finishedQuiz.classList.add("removeContent");
+    }
     beforeStartingQuiz.classList.add("removeContent");
     afterStartingQuiz.classList.remove("removeContent");
 }
