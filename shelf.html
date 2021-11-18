@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>ON 북</title>
+  </head>
+  <body>
+    <section class="status-bar">
+      <div class="status-bar__column"><i class="fas fa-wifi"></i></div>
+      <div class="status-bar__column"><span id="js-clock">00:00</span></div>
+      <div class="status-bar__column">
+        <i class="fas fa-signal"></i>
+        <span class="battery-percent">82%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+      </div>
+    </section>
+
+    <header class="screen-header">
+      <div class="screen-header__column">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div class="screen-header__column">
+        <div class="screen-header__title"><h1>읽고 있는 책</h1></div>
+        <!--
+          <div class="screen-header__subtitle">
+            <h2></h2>
+          </div>
+          -->
+      </div>
+      <div class="screen-header__column">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <main class="reading-books">
+      <div class="reading-book">
+        <img id="book1-main.html" src="imgs/처음 만나는 현대미술.PNG" />
+        <a
+          target="_blank"
+          href="https://search.kyobobook.co.kr/web/search?vPstrKeyWord=%25ED%2598%2584%25EB%258C%2580%25EB%25AF%25B8%25EC%2588%25A0%25EC%259D%2580%2520%25EC%25B2%2598%25EC%259D%258C%25EC%259D%25B8%25EB%258D%25B0%25EC%259A%2594&orderClick=LAG"
+        >
+          책 보러 가기
+        </a>
+      </div>
+      <div class="reading-book">
+        <img id="book3-main.html" src="imgs/book3/book3.png" />
+        <a
+          target="_blank"
+          href="https://search.kyobobook.co.kr/web/search?vPstrKeyWord=%25EB%258A%2590%25EB%2582%258C%25EC%259D%2598%2520%25EB%25AF%25B8%25EC%2588%25A0%25EA%25B4%2580&orderClick=LAG"
+          >책 보러 가기</a
+        >
+      </div>
+      <div class="reading-book">
+        <img id="book2-main.html" src="imgs/book2/book2.jpg" />
+        <a
+          target="_blank"
+          href="https://search.kyobobook.co.kr/web/search?vPstrKeyWord=%25ED%2595%259C%25EA%25B5%25AD%25EC%2582%25AC%2520%25EC%2598%2581%25ED%2599%2594%25EA%25B4%2580&orderClick=LAG"
+          >책 보러 가기</a
+        >
+      </div>
+    </main>
+
+    <aside class="bookstore-links"></aside>
+
+    <nav class="nav-bar">
+      <a class="nav-bar__home" href="home.html">
+        <i class="fas fa-home"></i>
+      </a>
+      <a class="nav-bar__profile" href="profile.html"
+        ><i class="fas fa-portrait"></i>
+      </a>
+      <a
+        class="nav-bar__shelf"
+        href="shelf.html"
+        style="background-color: var(--nav-bar-current-color)"
+      >
+        <i class="fas fa-book"></i>
+      </a>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/clock.js"></script>
+    <script src="js/screen-header.js"></script>
+    <script src="js/shelf.js"></script>
+  </body>
+</html>

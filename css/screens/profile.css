@@ -7,6 +7,65 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.my-menu:first-child {
+  padding: 0;
+}
+
+.modal__change-name-form {
+  margin-top: 115px;
+  display: flex;
+}
+
+.modal__change-name-form input:first-child {
+  padding: 5px;
+  margin-right: 20px;
+  outline: none;
+  color: black;
+  font-weight: bold;
+}
+
+.modal__change-name-form input::placeholder {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+
+.modal__change-name-form input:last-child {
+  cursor: pointer;
+  background-color: rgb(231, 214, 56);
+  border: none;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.modal__change-name-form input:last-child:active {
+  transform: scale(0.9);
+}
+
+.my-menu__name {
+  font-size: 20px;
+  font-family: "Poor Story", cursive;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.my-menu__name button {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  font-size: 20px;
+  aspect-ratio: 1;
+}
+
+.my-menu__name button:active {
+  transform: scale(0.8);
+}
+
+.my-menu__name button i {
+  color: rgb(94, 94, 94);
+}
+
 .my-menu__title {
   color: var(--purple-color);
   font-size: 18px;
@@ -50,6 +109,7 @@
 
 .joining-bookclub h2 {
   font-size: 20px;
+  font-weight: bold;
   margin-bottom: 25px;
 }
 

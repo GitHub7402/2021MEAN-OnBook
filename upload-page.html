@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>미션 게시판</title>
+  </head>
+
+  <body class="upload-page__body">
+    <section class="status-bar">
+      <div class="status-bar__column"><i class="fas fa-wifi"></i></div>
+      <div class="status-bar__column"><span id="js-clock">00:00</span></div>
+      <div class="status-bar__column">
+        <i class="fas fa-signal"></i>
+        <span class="battery-percent">82%</span>
+        <i class="fas fa-battery-three-quarters"></i>
+      </div>
+    </section>
+
+    <header class="screen-header screen-header--board">
+      <div class="screen-header__column">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <div class="screen-header__column">
+        <div class="screen-header__title"><h1>미션 게시판</h1></div>
+        <!--
+        <div class="screen-header__subtitle">
+          <h2></h2>
+        </div>
+        -->
+      </div>
+      <div class="screen-header__column">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+    <main class="upload-page__main">
+      <header class="upload-page__title">
+        <h1>글 작성하기</h1>
+        <h2>*글 작성 시 포인트가 5점 적립됩니다!</h2>
+      </header>
+      <form class="upload-page__form">
+        <label for="missions">책과 미션을 선택해주세요</label>
+        <select name="missions" id="missions">
+          <optgroup label="현대미술은 처음인데요">
+            <option value="book1-mission1">현대) 미션1</option>
+            <option value="book1-mission6">현대) 미션6</option>
+          </optgroup>
+          <optgroup label="느낌의 박물관">
+            <option value="book3-mission1">느낌) 미션1</option>
+            <option value="book3-mission2">느낌) 미션2</option>
+            <option value="book3-mission3">느낌) 미션3</option>
+            <option value="book3-mission4">느낌) 미션4</option>
+          </optgroup>
+          <optgroup label="한국사 박물관">
+            <option value="book2-mission2">한국사) 미션2</option>
+            <option value="book2-mission4">한국사) 미션4</option>
+            <option value="book2-mission5">한국사) 미션5</option>
+          </optgroup>
+        </select>
+      </form>
+      <form class="upload-page__form--hashtag">
+        <label for="hashtag">해시태그</label>
+        <input required id="hashtag" type="text" placeholder="#게시" />
+        <input id="hashtagBtn" type="button" value="확인" />
+        <div class="created-hashtags"></div>
+      </form>
+      <form class="upload-page__form--text">
+        <label for="upload-text">글을 입력해주세요.</label>
+        <input
+          id="upload-text"
+          maxlength="100"
+          type="text"
+          placeholder="임시 구현이라 글자 수 제한을 100자로 두었습니다."
+        />
+        <input type="submit" value="업로드" />
+      </form>
+      <h1 class="not-implemented-notice removeContent">
+        *실제 업로드는 구현하지 않았습니다.
+      </h1>
+    </main>
+
+    <nav class="nav-bar">
+      <a class="nav-bar__home" href="home.html">
+        <i class="fas fa-home"></i>
+      </a>
+      <a class="nav-bar__profile" href="profile.html"
+        ><i class="fas fa-portrait"></i>
+      </a>
+      <a class="nav-bar__shelf" href="shelf.html">
+        <i class="fas fa-book"></i>
+      </a>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/clock.js"></script>
+    <script src="js/screen-header.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/link-btns.js"></script>
+    <script src="js/upload-page.js"></script>
+  </body>
+</html>

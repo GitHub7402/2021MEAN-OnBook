@@ -103,7 +103,7 @@
 }
 
 .mission-board-form__title button:active {
-  transform: scale(0.95);
+  transform: scale(0.9);
 }
 
 .user-posts {

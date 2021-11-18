@@ -1,96 +1,120 @@
-// Book1 Mission1
+// Left Btn, Right Btn
+const leftBtn = document.querySelector("#leftBtn");
+const rightBtn = document.querySelector("#rightBtn");
+
+// Book1 Mission0, 6
 const img1_0_0 = document.querySelector("#m1-0-0");
 const img1_0_1 = document.querySelector("#m1-0-1");
 const img1_0_2 = document.querySelector("#m1-0-2");
 const img1_0_3 = document.querySelector("#m1-0-3");
 
+const img1_6_0 = document.querySelector("#m1-6-0");
+const img1_6_1 = document.querySelector("#m1-6-1");
+const img1_6_2 = document.querySelector("#m1-6-2");
+const img1_6_3 = document.querySelector("#m1-6-3");
+const img1_6_4 = document.querySelector("#m1-6-4");
+
 const REMOVE_CONTENT = "removeContent";
 
-function checkImg1(event) {
-    const imgId = event.target.id;
-    changeImg1(imgId);
+function clickLeft_InspectClassName() {
+    if (document.title === "들어가기 - 처음 만나는 현대미술") {
+        if (img1_0_1.className === "") {
+            showImg1_0_0();
+        } else if (img1_0_2.className === "") {
+            showImg1_0_1();
+        } else if (img1_0_3.className === "") {
+            showImg1_0_2();
+        }
+    } else if (document.title === "미션#6 - 처음 만나는 현대미술") {
+        if (img1_6_1.className === "") {
+            showImg1_6_0();
+        } else if (img1_6_2.className === "") {
+            showImg1_6_1();
+        } else if (img1_6_3.className === "") {
+            showImg1_6_2();
+        } else if (img1_6_4.className === "") {
+            showImg1_6_3();
+        }
+    }
+}
+function clickRight_InspectClassName() {
+    if (document.title === "들어가기 - 처음 만나는 현대미술") {
+        if (img1_0_0.className === "") {
+            showImg1_0_1();
+        } else if (img1_0_1.className === "") {
+            showImg1_0_2();
+        } else if (img1_0_2.className === "") {
+            showImg1_0_3();
+        }
+    } else if (document.title === "미션#6 - 처음 만나는 현대미술") {
+        if (img1_6_0.className === "") {
+            showImg1_6_1();
+        } else if (img1_6_1.className === "") {
+            showImg1_6_2();
+        } else if (img1_6_2.className === "") {
+            showImg1_6_3();
+        } else if (img1_6_3.className === "") {
+            showImg1_6_4();
+        }
+    }
 }
 
-function changeImg1(imgId) {
-    if (imgId === "m1-0-0") {
+function hideAllImg() {
+    if (document.title === "들어가기 - 처음 만나는 현대미술") {
         img1_0_0.classList.add(REMOVE_CONTENT);
-        img1_0_1.classList.remove(REMOVE_CONTENT);
-    } else if (imgId === "m1-0-1") {
         img1_0_1.classList.add(REMOVE_CONTENT);
-        img1_0_2.classList.remove(REMOVE_CONTENT);
-    } else if (imgId === "m1-0-2") {
         img1_0_2.classList.add(REMOVE_CONTENT);
-        img1_0_3.classList.remove(REMOVE_CONTENT);
+        img1_0_3.classList.add(REMOVE_CONTENT);
+    } else if (document.title === "미션#6 - 처음 만나는 현대미술") {
+        img1_6_0.classList.add(REMOVE_CONTENT);
+        img1_6_1.classList.add(REMOVE_CONTENT);
+        img1_6_2.classList.add(REMOVE_CONTENT);
+        img1_6_3.classList.add(REMOVE_CONTENT);
+        img1_6_4.classList.add(REMOVE_CONTENT);
     }
 }
 
-if (img1_0_0) {
-    img1_0_0.addEventListener("click", checkImg1);
+function showImg1_0_0() {
+    hideAllImg();
+    img1_0_0.classList.remove(REMOVE_CONTENT);
 }
-if (img1_0_1) {
-    img1_0_1.addEventListener("click", checkImg1);
+function showImg1_0_1() {
+    hideAllImg();
+    img1_0_1.classList.remove(REMOVE_CONTENT);
 }
-if (img1_0_2) {
-    img1_0_2.addEventListener("click", checkImg1);
+function showImg1_0_2() {
+    hideAllImg();
+    img1_0_2.classList.remove(REMOVE_CONTENT);
 }
-
-// Book1 Mission6
-const img6_0_0 = document.querySelector("#m6-0-0");
-const img6_0_1 = document.querySelector("#m6-0-1");
-const img6_0_2 = document.querySelector("#m6-0-2");
-const img6_0_3 = document.querySelector("#m6-0-3");
-const img6_0_4 = document.querySelector("#m6-0-4");
-
-function checkImg6(event) {
-    const imgId = event.target.id;
-    changeImg6(imgId);
+function showImg1_0_3() {
+    hideAllImg();
+    img1_0_3.classList.remove(REMOVE_CONTENT);
 }
 
-function changeImg6(imgId) {
-    if (imgId === "m6-0-0") {
-        img6_0_0.classList.add(REMOVE_CONTENT);
-        img6_0_1.classList.remove(REMOVE_CONTENT);
-    } else if (imgId === "m6-0-1") {
-        img6_0_1.classList.add(REMOVE_CONTENT);
-        img6_0_2.classList.remove(REMOVE_CONTENT);
-    } else if (imgId === "m6-0-2") {
-        img6_0_2.classList.add(REMOVE_CONTENT);
-        img6_0_3.classList.remove(REMOVE_CONTENT);
-    } else if (imgId === "m6-0-3") {
-        img6_0_3.classList.add(REMOVE_CONTENT);
-        img6_0_4.classList.remove(REMOVE_CONTENT);
-    }
+function showImg1_6_0() {
+    hideAllImg();
+    img1_6_0.classList.remove(REMOVE_CONTENT);
+}
+function showImg1_6_1() {
+    hideAllImg();
+    img1_6_1.classList.remove(REMOVE_CONTENT);
+}
+function showImg1_6_2() {
+    hideAllImg();
+    img1_6_2.classList.remove(REMOVE_CONTENT);
+}
+function showImg1_6_3() {
+    hideAllImg();
+    img1_6_3.classList.remove(REMOVE_CONTENT);
+}
+function showImg1_6_4() {
+    hideAllImg();
+    img1_6_4.classList.remove(REMOVE_CONTENT);
 }
 
-if (img6_0_0) {
-    img6_0_0.addEventListener("click", checkImg6);
+if (leftBtn) {
+    leftBtn.addEventListener("click", clickLeft_InspectClassName);
 }
-if (img6_0_1) {
-    img6_0_1.addEventListener("click", checkImg6);
-}
-if (img6_0_2) {
-    img6_0_2.addEventListener("click", checkImg6);
-}
-if (img6_0_3) {
-    img6_0_3.addEventListener("click", checkImg6);
-}
-
-// Book2 Mission0 (Quiz)
-const img2_0_0 = document.querySelector("#m2-0-0");
-const img2_0_1 = document.querySelector("#m2-0-1");
-
-function checkImg2_0(event) {
-    const imgId = event.target.id;
-    changeImg2_0(imgId);
-}
-
-function changeImg2_0(imgId) {
-    if (imgId === "m2-0-0") {
-        img2_0_0.classList.add(REMOVE_CONTENT);
-        img2_0_1.classList.remove(REMOVE_CONTENT);
-    }
-}
-
-if (img2_0_0) {
-    img2_0_0.addEventListener("click", checkImg2_0);
+if (rightBtn) {
+    rightBtn.addEventListener("click", clickRight_InspectClassName);
 }

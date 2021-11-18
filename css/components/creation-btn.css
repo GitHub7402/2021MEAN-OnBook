@@ -4,6 +4,10 @@
   right: 20px;
 }
 
+.mission-board-form__creation:active {
+  transform: scale(0.9);
+}
+
 .mission-board-form__creation button {
   cursor: pointer;
   display: flex;

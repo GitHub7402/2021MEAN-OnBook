@@ -18,8 +18,32 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.book-main > section > img:hover {
-  cursor: pointer;
+#book1-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-main__btns {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.book-main__btns a:first-child {
+  margin-right: 15px;
+}
+
+.book-main__btns a {
+  padding: 10px 15px;
+  background-color: rgba(248, 235, 118, 0.952);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 5px;
+}
+
+.book-main__btns a:active {
+  transform: scale(0.9);
 }
 
 .book-main__missions {

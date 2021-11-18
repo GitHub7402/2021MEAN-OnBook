@@ -38,6 +38,24 @@
 
     <div style="padding: 130px 0 200px 0">
       <section class="my-menu">
+        <div class="mission-preview__modal removeContent">
+          <button class="mission-preview__close">
+            <i class="fas fa-times"></i>
+          </button>
+          <form class="modal__change-name-form">
+            <input type="text" placeholder="" maxlength="6" required />
+            <input type="submit" value="확인" />
+          </form>
+        </div>
+        <div class="my-menu__name">
+          <h3>OO님, 안녕하세요😊</h3>
+          <button>
+            <i class="fas fa-edit"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="my-menu">
         <div class="my-menu__title">
           <h3>My Menu</h3>
         </div>
@@ -50,17 +68,17 @@
           <li class="my-menu__content">
             <i class="fas fa-desktop" style="color: rgba(0, 0, 0, 0.8)"></i>
             <h4>북클럽 미션</h4>
-            <span>6</span>
+            <span>9</span>
           </li>
           <li class="my-menu__content">
             <i class="far fa-edit" style="color: #8ac6dd"></i>
             <h4>내가 쓴 글</h4>
-            <span>30</span>
+            <span>2</span>
           </li>
           <li class="my-menu__content">
             <i class="fas fa-bell" style="color: #f7d360"></i>
             <h4>내 알림</h4>
-            <span>17</span>
+            <span>3</span>
           </li>
         </ul>
       </section>
@@ -102,5 +120,6 @@
     ></script>
     <script src="js/clock.js"></script>
     <script src="js/screen-header.js"></script>
+    <script src="js/profile-name.js"></script>
   </body>
 </html>

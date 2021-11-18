@@ -1,0 +1,29 @@
+.notice-modal__content {
+  position: relative;
+  top: 200px;
+}
+
+.notice-modal__text {
+  background-color: rgb(235, 212, 235);
+  font-family: "Poor Story", cursive;
+  font-weight: bold;
+  font-size: 17px;
+  border-radius: 20px;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notice-modal__text h1:nth-child(2) {
+  margin: 10px 0;
+}
+
+.notice-modal__content svg {
+  width: 60px;
+  position: absolute;
+}
+
+.notice-modal__content svg:first-child {
+  bottom: 80px;
+}

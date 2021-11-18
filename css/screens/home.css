@@ -2,6 +2,7 @@
   margin-bottom: 30px;
   padding-top: 60px;
   font-size: 50px;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   color: #b78e0f;
@@ -38,6 +39,7 @@
 .home-btn {
   height: 70px;
   font-size: 25px;
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,6 +53,11 @@
 
 .home-btn:nth-child(2) {
   background-color: #ffeeff;
+}
+
+.home-btn:first-child:active,
+.home-btn:nth-child(2):active {
+  transform: scale(0.95);
 }
 
 .home-btn:last-child {

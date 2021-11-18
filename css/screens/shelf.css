@@ -1,0 +1,51 @@
+.reading-books {
+  padding: 150px 15px 80px 15px;
+}
+
+.reading-books h1 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.reading-book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reading-book:nth-child(2) {
+  margin: 20px 0;
+}
+
+.reading-book img {
+  cursor: pointer;
+  margin-right: 20px;
+  width: 40%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.reading-book a {
+  cursor: pointer;
+  padding: 10px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.reading-book a:active {
+  transform: scale(0.9);
+}
+
+.reading-book:first-child a {
+  border: none;
+  background-color: rgb(255, 167, 135);
+}
+
+.reading-book:nth-child(2) a {
+  background-color: rgb(211, 189, 255);
+}
+
+.reading-book:last-child a {
+  background-color: aliceblue;
+}

@@ -82,6 +82,10 @@
   cursor: pointer;
 }
 
+.hoping-bookclub__apply button:active {
+  transform: scale(0.9);
+}
+
 .hoping-bookclub__apply button i {
   margin-left: 10px;
 }

@@ -17,6 +17,42 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+.mission-form__img--btns {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  bottom: 25px;
+}
+
+.mission-form__img--btns button {
+  border-radius: 50%;
+  width: 40px;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 20px;
+  color: whitesmoke;
+  background-color: #ffc107;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+
+.mission-form__img--btns button:active {
+  transform: scale(0.9);
+}
+
+.mission-form__img--btns button:first-child {
+  position: relative;
+  right: 15px;
+}
+
+.mission-form__img--btns button:last-child {
+  position: relative;
+  left: 15px;
+}
+
 .mission-form__btns {
   margin-top: 20px;
   display: flex;
@@ -34,6 +70,10 @@
   color: #c48b9f;
   display: flex;
   justify-content: center;
+}
+
+.mission-form__btn:active {
+  transform: scale(0.95);
 }
 
 .mission-form__btn:last-child {

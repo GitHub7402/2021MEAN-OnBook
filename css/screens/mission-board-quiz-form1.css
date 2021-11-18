@@ -45,6 +45,10 @@
   background-color: #f0b608;
 }
 
+#quizBackBtn:active {
+  transform: scale(0.9);
+}
+
 .quiz-question {
   margin-top: 30px;
   display: flex;
@@ -85,6 +89,10 @@
   margin: 15px 0;
 }
 
+.quiz-buttons button:active {
+  transform: scale(0.9);
+}
+
 .quiz-controller {
   width: 80%;
   display: flex;
@@ -104,6 +112,10 @@
   background-color: #ffc107;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   cursor: pointer;
+}
+
+.quiz-controller button:active {
+  transform: scale(0.9);
 }
 
 .quiz-modal {
@@ -141,8 +153,13 @@
   margin-bottom: 10px;
 }
 
-#not-implemented-quiz > img {
+#finished-quiz > img {
   width: 90%;
   aspect-ratio: 1;
   margin-bottom: -30px;
+}
+
+#quizQuestionBtn:active,
+#quiz-start-btn:active {
+  transform: scale(0.9);
 }

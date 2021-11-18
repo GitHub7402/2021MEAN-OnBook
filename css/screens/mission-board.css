@@ -44,6 +44,14 @@
   font-weight: bold;
 }
 
+.mission-board__mission:active {
+  transform: scale(0.95);
+}
+
+.mission-board__missions .not-implemented:active {
+  transform: scale(1);
+}
+
 .mission-board__mission span:first-child {
   margin-bottom: 5px;
 }
